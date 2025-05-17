@@ -6,12 +6,9 @@ import './App.css'
 function App() {
   return (
     <>
-      <div className="navbar bg-purple-200 shadow-sm">
-        
+      <div className="navbar bg-purple-200 shadow-sm flex justify-between">
         <a className="btn btn-ghost text-xl">👩‍💻devTinder</a>
-        
         <div className="flex gap-2">
-          
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
