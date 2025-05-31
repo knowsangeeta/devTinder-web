@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const user = useSelector((state) => state.user); // adjust path as per your store
-
+  console.log("User in NavBar:", user);
   const handleLogout = () => {
     // Add your logout logic here
     console.log("User logged out");
@@ -20,7 +20,7 @@ const NavBar = () => {
               <div className="w-10 rounded-full">
                 <img
                   alt="user img"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  src={user.photoUrl}
                 />
               </div>
             </label>
